@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.welcome{
+    position: relative;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.highlights{
+    margin-left: 8px;
+    color: teal;
+}
+
+.loginForm{
+    width: 41%;
+    height: 45%;
+    /* border: 1px solid red; */
+    position: relative;
+    top: 21%;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.nameField{
+    width: 60%;
+    height: 18%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(41, 39, 39);
+    position: absolute;
+    top: 9%;
+}
+
+.nameField::placeholder{
+    /* padding-left: 4%; */
+    font-size: 18px;
+    opacity: 0.6;
+}
+
+.passwordField{
+    width: 60%;
+    height: 18%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(41, 39, 39);
+    position: absolute;
+    top: 35%;
+}
+
+.passwordField::placeholder{
+    font-size: 18px;
+    opacity: 0.6;
+}
+
+.btnSubmit{
+    border: none;
+    width: 40%;
+    height: 17%;
+    position: absolute;
+    top: 60%;
+    background-color: rgb(26, 151, 26);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+}
