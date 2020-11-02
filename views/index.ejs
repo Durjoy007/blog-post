@@ -10,10 +10,10 @@
 </head>
 <body>
     <h1 class="welcome">Welcome to our <span class="highlights">Blog Site!</span></h1>
-    <form action="/views/newsfeed.ejs" method="POST" id="loginForm" class="loginForm">
+    <form action="/newsfeed" method="POST" id="loginForm" class="loginForm" name="loginForm">
         <input type="text" placeholder="User name" id="userName" class="nameField" name="userName" autocomplete="off">
         <input type="password" placeholder="Password" id="userPass" class="passwordField" name="userPass" autocomplete="off">
-        <button class="btnSubmit" onsubmit="userCheck()">Submit</button>
+        <button class="btnSubmit">Submit</button>
     </form>
 </body>
 </html>

@@ -10,6 +10,9 @@ app.use("/css", express.static(__dirname + "public/css"))
 app.use("/js", express.static(__dirname + "public/js"))
 
 
+app.use(express.urlencoded({extended: false}))
+
+
 // Set Views
 app.set("views", "./views")
 app.set("view engine", "ejs")
@@ -17,12 +20,18 @@ app.set("view engine", "ejs")
 
 // Sending Files on Request
 app.post("/newsfeed", function(req, res){
-    res.render("newsfeed")
+    if(req.body.userName == 'bishway' && req.body.userPass == 1234){
+        res.render("newsfeed")
+    }
+    
+    else{
+        res.send(`
+            Invalid user.
+            <a href="/"> Back to homepage </a>
+        `)
+    }
 })
 
-app.get("/newsfeed", function(req, res){
-    res.render("newsfeed")
-})
 
 app.get("/", function(req, res) {
     res.render("index")

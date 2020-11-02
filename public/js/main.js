@@ -1,13 +1,16 @@
-var loginForm = document.getElementById("loginForm");
-var userName = document.getElementById("userName").value;
-var userPass = document.getElementById("userPass").value;
+var blogForm = document.getElementById("blogForm");
+var blogTitle = document.getElementById("blogTitle");
+var blogDescription = document.getElementById("blogDescription");
 
-function userCheck(){
-    if (userName == 'bishway' && userPass == '1234') {
-        document.location("/views/newsfeed.ejs")
-    }
+blogForm.addEventListener("submit", function(event){
+    event.preventDefault();
+    createBlog(blogTitle.value, blogDescription.value);
+});
 
-    else{
-        document.write("Invalid user")
-    }
+function createBlog(blogTitle, blogDescription){
+    var displayTiitle = `<div class="displayTitle" style="border: 1px solid black; width: 30%; height: 9%; position: relative; top: 4%; left: 12%;"> ${blogTitle} </div>`;
+    var displaDescription = `<div class="displayDescription" style="border: 1px solid black; width: 30%; height: 15%; position: relative; top: 6%; left: 12%;"> ${blogDescription} </div>`;
+    // taskList.insertAdjacentHTML('beforeend', taskHTML);
+    blogTitle.value = "";
+    blogDescription.value = "";
 }
