@@ -63,14 +63,14 @@ body{
 }
 
 .btnSubmit{
-    border: none;
-    width: 40%;
-    height: 17%;
-    position: absolute;
-    top: 60%;
-    background-color: rgb(26, 151, 26);
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 10px;
+border: none;
+width: 40%;
+height: 17%;
+position: absolute;
+top: 60%;
+background-color: rgb(26, 151, 26);
+color: white;
+font-size: 18px;
+font-weight: bold;
+border-radius: 10px;
 }

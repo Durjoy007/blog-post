@@ -16,6 +16,14 @@ app.set("view engine", "ejs")
 
 
 // Sending Files on Request
+app.post("/newsfeed", function(req, res){
+    res.render("newsfeed")
+})
+
+app.get("/newsfeed", function(req, res){
+    res.render("newsfeed")
+})
+
 app.get("/", function(req, res) {
     res.render("index")
 })

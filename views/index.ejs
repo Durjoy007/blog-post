@@ -6,13 +6,14 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="js/main.js"></script>
 </head>
 <body>
     <h1 class="welcome">Welcome to our <span class="highlights">Blog Site!</span></h1>
-    <form action="" class="loginForm">
+    <form action="/views/newsfeed.ejs" method="POST" id="loginForm" class="loginForm">
         <input type="text" placeholder="User name" id="userName" class="nameField" name="userName" autocomplete="off">
         <input type="password" placeholder="Password" id="userPass" class="passwordField" name="userPass" autocomplete="off">
-        <button class="btnSubmit">Submit</button>
+        <button class="btnSubmit" onsubmit="userCheck()">Submit</button>
     </form>
 </body>
 </html>
